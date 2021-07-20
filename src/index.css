@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  background-color: #4b636e;
+}
+
+.blog-header {
+  background-color: #1c313a;
+  border-bottom: 2px solid white;
+  padding: 1%;
+}
+
+.blog-title {
+  color: white;
+}
+
+.blog-link, .blog-link:hover, .blog-link:active {
+  text-decoration: none;
+  color: inherit
+}

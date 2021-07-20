@@ -1,0 +1,17 @@
+.card {
+    text-align: left;
+    width: 50%;
+    margin: 2% 0 2% 0;
+    box-shadow: 5px 5px 15px -2px rgba(34,30,30,0.75);
+    -webkit-box-shadow: 5px 5px 15px -2px rgba(34,30,30,0.75);
+    -moz-box-shadow: 5px 5px 15px -2px rgba(34,30,30,0.75);
+}
+
+button {
+    margin-right: 3%;
+}
+
+.button-link, .button-link:hover, .button-link:active {
+    color: snow;
+    text-decoration: none;
+}

@@ -1,0 +1,9 @@
+body {
+    background-color: #4b636e;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
