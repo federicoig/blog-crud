@@ -8,10 +8,12 @@ El mismo debe ser armado en React, y consumir los datos de una JSON Placeholder,
 * Email: challenge@alkemy.org
 * Password: react
 
+## Gallery
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Pixel 2 phone preview
+![Blog phone view.](https://i.imgur.com/vHbXppr.png)
+### Webpage preview
+![Blog web view.](https://i.imgur.com/Jg18dwr.png)
 
 ## Available Scripts
 
