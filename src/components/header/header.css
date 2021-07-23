@@ -1,0 +1,44 @@
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c313a;
+    border-bottom: 2px solid white;
+    padding: 1%;
+}
+  
+.blog-title {
+    color: white;
+}
+  
+.blog-link, .blog-link:hover, .blog-link:active {
+    text-decoration: none;
+    color: inherit
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.header-button {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 750px) {
+    .blog-title {
+        display: none;
+    }
+    .header-buttons {
+        justify-content: space-around;
+        width: 100%;
+    }
+    .header-button {
+        margin-right: 0;
+        width: 40%;
+    }
+    .blog-header {
+        padding: 2%;
+    }
+}

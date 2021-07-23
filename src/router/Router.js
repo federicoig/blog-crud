@@ -1,18 +1,24 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
+import { PrivateRoute } from "./PrivateRoute.js";
 import { Auth } from "../views/Auth/auth.js"
 import { Home } from "../views/Home/home.js";
 import { Details } from "../views/Details/details.js";
+import { CreatePost } from "../views/createPost/createPost.js";
+import { EditPost } from "../views/editPost/editPost.js";
 
 export const Router = () => {
+
     return(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <Switch>
-                <Route exact path="/" component={Home}/>
+                <Redirect exact from="/" to="/home" />
                 <Route exact path="/auth" component={Auth}/>
-                <Route exact path="/home" component={Home}/>
-                <Route exact path="/posts/:id" component={Details}/>
+                <PrivateRoute path="/home" component={Home}/>
+                <PrivateRoute path="/posts/edit-post/:id" component={EditPost}/>
+                <PrivateRoute path="/posts/create-post" component={CreatePost}/>
+                <PrivateRoute path="/posts/:id" component={Details}/>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }

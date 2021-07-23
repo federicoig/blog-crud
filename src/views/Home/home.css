@@ -1,9 +1,10 @@
 body {
-    background-color: #4b636e;
+    background-color: #3c535e;
 }
 
 .home-wrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
 }

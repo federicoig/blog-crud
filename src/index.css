@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #3c535e !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,21 +13,6 @@ code {
     monospace;
 }
 
-html {
-  background-color: #4b636e;
-}
-
-.blog-header {
-  background-color: #1c313a;
-  border-bottom: 2px solid white;
-  padding: 1%;
-}
-
-.blog-title {
-  color: white;
-}
-
-.blog-link, .blog-link:hover, .blog-link:active {
-  text-decoration: none;
-  color: inherit
+html, body, .App {
+  height: 100%;
 }

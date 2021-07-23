@@ -13,9 +13,8 @@ const schema = Yup.object().shape({
 
 export const Auth = () => {
     const history = useHistory()
-    let userHasToken = isAuthenticated()
 
-    if(userHasToken === true){
+    if(isAuthenticated() === true){
         history.push("/home")
     }
 
@@ -69,10 +68,10 @@ export const Auth = () => {
                             <Form.Control.Feedback type="invalid">
                                 {errors.password}
                             </Form.Control.Feedback>
-                            <Form.Text>We'll never share your info with anyone else.</Form.Text>
+                            <Form.Text className="muted-text">We'll never share your info with anyone else.</Form.Text>
                         </Form.Group>
                         <Button variant="primary" type="submit">
-                            Ingresar
+                            Login
                         </Button>
                     </Form>
                 }

@@ -1,6 +1,8 @@
+import store from "store-js"
+
 export const isAuthenticated = () => {
     
-    if (localStorage.getItem("token") == null) {
+    if (store.get("token") == null) {
         return false
     }
     

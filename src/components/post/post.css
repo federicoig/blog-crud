@@ -7,11 +7,26 @@
     -moz-box-shadow: 5px 5px 15px -2px rgba(34,30,30,0.75);
 }
 
-button {
-    margin-right: 3%;
+.card-body {
+    display: flex;
+}
+
+.post-button {
+    margin-right: 2%;
 }
 
 .button-link, .button-link:hover, .button-link:active {
     color: snow;
     text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    .card{
+        text-align: center;
+        margin-top: 5%;
+        width: 75%;
+    }
+    .card-body {
+        justify-content: center;
+    }
 }

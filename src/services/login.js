@@ -1,4 +1,5 @@
 import axios from "axios";
+import store from "store-js"
 
 const url= 'http://challenge-react.alkemy.org';
 
@@ -11,7 +12,7 @@ export const logUserIn = (data) => {
         })
         .then(response => response.data.token)
         .then(data => {
-            localStorage.setItem("token", data)
+            store.set("token", data)
             return "Se guardó el token."
         })
         .catch(err => {
