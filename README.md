@@ -1,3 +1,14 @@
+# Challenge Frontend
+
+Deberás desarrollar un cliente para un Blog.
+El mismo debe ser armado en React, y consumir los datos de una JSON Placeholder, una API que expone datos ficticios en formato JSON.
+
+## Los datos válidos para obtener un token son:
+
+* Email: challenge@alkemy.org
+* Password: react
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
